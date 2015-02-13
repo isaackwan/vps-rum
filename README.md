@@ -1,8 +1,8 @@
 # VPS RUM-ish
 
 This project allows anyone to run performance tests on jsDelivr providers from the command line of a linux server.
-Its important because when someone is benchmarking jsDelivr using a synthetic test from a server our load balancing has no data for that ASN because all of our RUM tests come from residential IPs ASNs. 
-This results in worse results when testing from a server vs a real life user.
+Its important because when someone is benchmarking jsDelivr using a synthetic test from a server, our load balancing has no data for that ASN because all of our RUM tests come from residential IPs ASNs. 
+This results in worse performance when testing from a server vs a real life user.
 
 To solve this issue the plan is to deploy as much agents as possible to collect performance tests from ASNs used by datacenters.
 
@@ -41,7 +41,7 @@ pip install cedexis.radar
 */1   *    *    *    * /usr/bin/cedexis-radar-cli -c 11475
 ```
 
-##### Run the tests manually
+##### OR Run the tests manually
 ```
 cedexis-radar-cli -c 11475
 ```
