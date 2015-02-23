@@ -46,6 +46,23 @@ pip install cedexis.radar
 cedexis-radar-cli -c 11475
 ```
 
-## Ubuntu
+## Debian/Ubuntu
 
-TODO
+##### Install Python PIP
+```
+apt-get install -y python-pip
+```
+##### Install Cedexis CLI
+```
+pip install cedexis.radar
+```
+
+##### Setup Cronjob to run every minute
+```
+*/1   *    *    *    * /usr/local/bin/cedexis-radar-cli -c 11475
+```
+
+##### OR Run the tests manually
+```
+cedexis-radar-cli -c 11475
+```
